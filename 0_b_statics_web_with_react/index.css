@@ -1,3 +1,12 @@
+body {
+    /* footer */
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+.main-div{
+    min-height: 100vh; 
+}
 .nav {
     display: flex;
     justify-content: space-between;
@@ -16,3 +25,20 @@
     padding: 10px;
 }
 
+.footer-position {
+    text-align: center;
+    margin-top: auto; 
+    min-height: 100vh;
+}
+.my-footer{
+    margin-top: auto; 
+    min-height: 100vh;    
+}
+.footer-elements {
+    margin-top: 40px;
+}
+
+.main-items > li::marker {
+   font-size: 1.5rem;
+   color: aqua;
+}

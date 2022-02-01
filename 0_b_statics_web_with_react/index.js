@@ -1,40 +1,10 @@
 
-//declarative
-// ReactDOM.render(<h1 className="header">This is JSX</h1>, document.getElementById("root"))
 
-// const navbar = (
-//     <nav>
-//         <h1>Menú</h1>
-//         <ul>
-//             <li>Primer</li>
-//             <li>Segon</li>
-//             <li>Postre</li>
-//         </ul>
-//     </nav>
-// )
-
-// ReactDOM.render(navbar, document.getElementById("root"))
-
-// const page = (
-//        <div>
-//            <img src="./reactlogo.png" width="60px"/>
-//             <h1>My web in React</h1>
-//             <h3>Reasons I love React</h3>
-//             <ol>
-//                 <li>It's composable</li>
-//                 <li>It's declarative</li>
-//                 <li>Realased in 2013</li>
-//             </ol>
-//     </div> 
-// )
-
-// Import Js
-//import Header from "./Header"
-
-function Header() {
+function Navbar() {
     return (
         <div>
         <header>
+        <main>
             <nav className="nav">
             <img src="./reactlogo.png" className="nav-logo"/>
             <ul className="nav-items">
@@ -43,6 +13,7 @@ function Header() {
                 <li>Contact</li>
             </ul>
             </nav>
+        </main>
         </header>
         </div>
     )
@@ -51,26 +22,42 @@ function Header() {
 
 function Footer() {
     return(
-        <div>
-            <footer>© 2022 Josep AnSab</footer>
+        <div className="footer-position">
+            <footer className="my-footer">
+                <div className="footer-elements">
+                © 2022 Josep AnSab
+                </div>                   
+            </footer>
         </div>
     )
 }
- function FunctName() {
+
+function MainComponents() {
+    return(
+        <div className="row">
+            <div className="col-sm-4"></div>
+            <div className="col-sm-6">
+                <h1>My web in React?</h1>
+                <h3>Reasons I love React</h3>
+                <ul className="main-items">
+                    <li>It's composable</li>
+                    <li>It's declarative</li>
+                    <li>Realased in 2013</li>
+                </ul>
+            </div>
+            <div class="col-sm-2"></div>
+         </div>
+    )
+}
+ function AllComponents() {
      return (
         
-        <div>
-        <Header />
-         <h1>My web in React</h1>
-         <h3>Reasons I love React</h3>
-         <ol>
-             <li>It's composable</li>
-             <li>It's declarative</li>
-             <li>Realased in 2013</li>
-         </ol>
-         <Footer />
+        <div className="main-div">
+        <Navbar />
+        <MainComponents />
+        <Footer />
         </div> 
      ) 
  }
 
-ReactDOM.render(<FunctName />, document.getElementById("root"))
+ReactDOM.render(<AllComponents />, document.getElementById("root"))
