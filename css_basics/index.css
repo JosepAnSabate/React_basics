@@ -1,0 +1,21 @@
+
+h2 {
+    color: chartreuse;
+    font-size: 15px;
+} 
+
+.title {
+    color: brown;
+}
+
+#third-title {
+    color: cadetblue;
+}
+
+/* media queries: size ddepending on the side of the screen */
+ /* if screen is more width than 650 pixxes: */
+@media (min-width: 650px){
+    h2{
+        font-size: 35px;
+    }
+}
