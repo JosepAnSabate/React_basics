@@ -1,3 +1,17 @@
+/* loading  */
+.loading-screen{
+  height: 100vh;
+  display: flex;
+  justify-content: center; /*horitzontal */
+  align-items: center; /* vertical*/
+}
+
+.my-spinner {
+  width: 4em;
+  height: 4em;
+  margin: 5px;
+}
+/* default */
 .App {
   text-align: center;
 }

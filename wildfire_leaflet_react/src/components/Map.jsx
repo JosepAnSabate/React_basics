@@ -6,6 +6,7 @@ import { Icon } from "leaflet";
 
 
 
+
 const Map = () => {
 
   const flame = new Icon({

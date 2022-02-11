@@ -1,0 +1,6 @@
+https://api.nasa.gov/
+
+https://eonet.gsfc.nasa.gov/docs/v2.1
+
+json:
+https://eonet.gsfc.nasa.gov/api/v2.1/events
