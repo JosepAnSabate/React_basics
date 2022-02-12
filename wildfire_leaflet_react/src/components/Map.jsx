@@ -48,7 +48,7 @@ const Map = ({eventData}) => {
 
   return (
     <div>
-<MapContainer center={[42.505, -122.09]} zoom={5}>
+<MapContainer center={[42.505, 18.09]} zoom={5}>
   <TileLayer
     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
