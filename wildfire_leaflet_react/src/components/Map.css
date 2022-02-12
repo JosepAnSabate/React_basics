@@ -24,3 +24,32 @@ h3.popup {
     font-weight: 600;
   }
   
+  .header{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+   
+    background-color:antiquewhite;
+    
+  }
+
+  .header-source{
+      font-size: 1.3em;
+      margin-top: 28px;
+      margin-right: 10px;
+  }
+
+  .header-title{
+    margin-bottom: 0;
+    margin-top: 17px;
+  }
+
+  .header-logo{
+    display: flex;
+    margin-left: 10px;
+  }
+
+  .logo-click{
+    text-decoration: none;
+    color: inherit;
+  }

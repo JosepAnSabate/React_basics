@@ -5,8 +5,6 @@ import "leaflet/dist/leaflet.css";
 import "./Map.css"
 import { Icon } from "leaflet";
 
-import LocationInfoBox from './LocationInfoBox';
-
 
 const Map = ({eventData}) => {
   // icon
@@ -56,7 +54,7 @@ const Map = ({eventData}) => {
   {/* <Marker position={[42.505, -122.09]} icon={flame}  /> */}
   {markers}
 </MapContainer>
-{locationInfo && <LocationInfoBox info={locationInfo} />}
+
     </div>
   )
 }
