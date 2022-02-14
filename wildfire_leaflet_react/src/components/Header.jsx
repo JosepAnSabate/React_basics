@@ -4,7 +4,7 @@ import './Map.css'
 import "leaflet/dist/leaflet.css";
 
 
-const iconPath = process.env.PUBLIC_URL;
+const iconPath = process.env.PUBLIC_URL; // from public folder
 
 export const Header = () => {
 

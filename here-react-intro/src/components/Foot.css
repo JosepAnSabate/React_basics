@@ -1,0 +1,10 @@
+h1{text-align: center;}
+
+.foot{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-foot{
+    width: 25px;
+}
