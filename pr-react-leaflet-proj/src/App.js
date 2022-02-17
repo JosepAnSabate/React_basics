@@ -14,6 +14,7 @@ function App() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
+        {/* or geogson from react leaflet  */}
         {estacionsMeteoData.features.map(estacio => (
           <Marker key={estacio.properties.codi_estacio} position={[
               estacio.properties.latitud,
