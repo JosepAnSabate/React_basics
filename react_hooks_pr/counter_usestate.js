@@ -1,7 +1,10 @@
 import React, {useState} from "react"
 
 function Form(){
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(() => {
+        console.log('run function one time');
+        return 0;
+    })
     
     function addNumber(){
         setCount(prevCount => prevCount + 1)
