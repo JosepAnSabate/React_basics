@@ -41,6 +41,15 @@ export default function App() {
     
     function handleSubmit(event) {
         event.preventDefault()
+        if(formData.password === formData.passwordConfirm){
+            console.log("Succesfully signed up")
+        } else {
+            console.log('Passwords do not match');
+        }
+
+        if (formData.joinNews) {
+            console.log('Thanks for signing up for our newsletter!');
+        }
     }
     
     return (
@@ -63,7 +72,7 @@ export default function App() {
                      value={formData.password}
                 />
                 <input 
-                    type="passwordConfirm" 
+                    type="password" 
                     placeholder="Confirm password"
                     className="form--input"
                      name="passwordConfirm"
