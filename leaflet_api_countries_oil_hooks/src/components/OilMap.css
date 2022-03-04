@@ -1,0 +1,6 @@
+.map-container-style {
+    height: 90vh;
+  }
+  .leaflet-container{
+    background-color: rgb(163,206,255)
+}

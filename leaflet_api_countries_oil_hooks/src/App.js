@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+import Oilprod from './components/Oilprod';
 import './App.css';
 
 function App() {
   return (
     <div>
-      hhh
+      <Oilprod />
     </div>
   );
 }
