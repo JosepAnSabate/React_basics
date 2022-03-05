@@ -17,10 +17,17 @@ const OilMap = ({countries}) => {
         layer.options.fillColor = country.properties.color;
         const name = country.properties.ADMIN;
         const confirmedText = country.properties.confirmedText;
+        let dailyP = (confirmedText/365).toFixed(1)
+        
+        if(confirmedText === "0 - 5"){
+            dailyP = 0
+        } 
+        
         layer.bindPopup(`
             <h4 class="popup-title">${name}</h4> 
             <p class="popup-quant">${confirmedText} Mbb/Y</p>
-            <p class="popup-quant">${(confirmedText/365).toFixed(1)} Mbb/D</p>
+            
+            <p class="popup-quant">${dailyP} Mbb/D</p>
             `);
     }
 
