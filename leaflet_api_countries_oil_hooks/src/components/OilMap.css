@@ -27,6 +27,7 @@
 
 .sidebar{
   position:absolute;
+  bottom: 0.7vh;
   z-index: 700;   
   /* In order for z-index to work, you'll 
   need to give the element a position:absolute or a 
@@ -34,8 +35,7 @@
   background-color: white;
   border: 2px solid black;
   padding: 5px;
-  margin: 20px;
-  margin-top: 66vh;
+  margin: 12px;
   font-size: 18px;
 }
 .center-text{
@@ -77,15 +77,13 @@
 
 @media (max-width: 360px) {
   .sidebar{
-      font-size: 12px;
+      font-size: 14px;
   }
   .title-info-legend{font-size: 16px;}
 }
 
 @media (max-height: 700px) {
   .sidebar{
-      margin: 10px;
-      margin-top: 60vh;
-      margin-left: 10px;
+     bottom: 0.1vh;
   }
 }

@@ -45,6 +45,7 @@ const Oilprod = () => {
     // console.log('CountriesData:', countriesData);
 
     console.log(countriesData.length, countriesData);
+    
 
      for (let i = 0; i < countriesData.length; i++) {
 
