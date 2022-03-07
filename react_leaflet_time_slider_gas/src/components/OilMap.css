@@ -1,5 +1,5 @@
 .map-container-style {
-    height: 90vh;
+    height: 85vh;
   }
 .leaflet-container{
     background-color: rgb(163,206,255)
@@ -42,16 +42,16 @@
   text-align: center;
 }
 
+.sidebar{
+  text-align: center;
+}
+
 .info-legend-conv {
   margin-bottom: 5px;
   margin-top: 5px;
 }
 .world-info-legend{
   margin-bottom: 15px;
-}
-
-.title-info-legend{
-  text-align: center;
 }
 
 .text-info-legend{
@@ -71,6 +71,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+
 
 @media (max-width: 470px) {
   .sidebar{
