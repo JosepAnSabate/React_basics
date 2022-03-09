@@ -8,7 +8,7 @@ const TimeSlider = () => {
     className="horizontal-slider"
     thumbClassName="example-thumb"
     trackClassName="example-track"
-    renderThumb={() => <div>x</div>}
+    renderThumb={() => <div>rslider</div>}
 />
   )
 }
